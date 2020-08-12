@@ -6,9 +6,37 @@
 
   <body>
     <h1><a href="index.html">샌즈의 샌즈세상</a></h1>
+    <input type="button" value="대마왕샌즈 등장" onclick="
+      var target = document.querySelector('body');
+      if(this.value == '대마왕샌즈 등장'){
+        var anctorZip = document.querySelectorAll('a');
+        var i = 0;
+        while(i<anctorZip.length){
+          anctorZip[i].style.color = 'powderblue';
+          i++;
+        }
+
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = '정의의사도 파피루스님';
+      }
+      else{
+        var anctorZip = document.querySelectorAll('a');
+        var i = 0;
+        while(i<anctorZip.length){
+          anctorZip[i].style.color = 'black';
+          i++;
+        }
+
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = '대마왕샌즈 등장';
+      }
+      ">
     <ol>
       <li><a href="1.html">샌즈</a></li>
       <li><a href="2.html">파피루스</a></li>
+      <li>슈퍼울트라샌즈</li>
     </ol>
     샌즈의 샌즈샌즈한 세상에 오신것을 환영합니다 꼬마샌즈님
   </body>
