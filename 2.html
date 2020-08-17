@@ -2,10 +2,44 @@
   <head>
     <title>샌즈마스터</title>
     <meta charset="utf-8">
+    <script>
+    function nightdaychanger(self){
+      var target = document.querySelector('body');
+      if(self.value == '대마왕샌즈 등장'){
+        var anctorZip = document.querySelectorAll('a');
+        var i = 0;
+        while(i<anctorZip.length){
+          anctorZip[i].style.color = 'powderblue';
+          i++;
+        }
+
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = '정의의사도 파피루스님';
+      }
+      else{
+        var anctorZip = document.querySelectorAll('a');
+        var i = 0;
+        while(i<anctorZip.length){
+          anctorZip[i].style.color = 'black';
+          i++;
+        }
+
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        self.value = '대마왕샌즈 등장';
+      }
+
+    }
+    </script>
   </head>
+
 
   <body>
     <h1><a href="index.html">샌즈의 샌즈세상</a></h1>
+    <input type="button" value="대마왕샌즈 등장" onclick="
+    nightdaychanger(this);
+    ">
     <ol>
       <li><a href="1.html">샌즈</a></li>
       <li><a href="2.html">파피루스</a></li>

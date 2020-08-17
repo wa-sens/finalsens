@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>핼로이곳은샌즈왕국</title>
+    <meta charset="utf-8">
+    <script>
+    function whykillsens(self){
+      if(self.value == '슈퍼샌즈발사장치'){
+        document.querySelector('body').style.backgroundColor = 'red';
+        alert('왜샌즈를죽이려한거지이나쁜자식아!!!!!');
+        self.value = '샌즈죽이지마나쁜녀석아 너는썩나가버려'
+      }
+      else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        alert('이번만봐줄개요 고마운줄아시요');
+        self.value = '슈퍼샌즈발사장치'
+      }
+    }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="sens" onclick="alert('끔찍한시간을보내고싶어?!')">
+    <input type="button" value="슈퍼샌즈발사장치" onclick="
+      whykillsens(this);
+      ">
+  </body>
+</html>

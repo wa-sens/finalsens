@@ -2,13 +2,10 @@
   <head>
     <title>샌즈마스터</title>
     <meta charset="utf-8">
-  </head>
-
-  <body>
-    <h1><a href="index.html">샌즈의 샌즈세상</a></h1>
-    <input type="button" value="대마왕샌즈 등장" onclick="
+    <script>
+    function nightdaychanger(self){
       var target = document.querySelector('body');
-      if(this.value == '대마왕샌즈 등장'){
+      if(self.value == '대마왕샌즈 등장'){
         var anctorZip = document.querySelectorAll('a');
         var i = 0;
         while(i<anctorZip.length){
@@ -18,7 +15,7 @@
 
         target.style.backgroundColor = 'black';
         target.style.color = 'white';
-        this.value = '정의의사도 파피루스님';
+        self.value = '정의의사도 파피루스님';
       }
       else{
         var anctorZip = document.querySelectorAll('a');
@@ -30,13 +27,22 @@
 
         target.style.backgroundColor = 'white';
         target.style.color = 'black';
-        this.value = '대마왕샌즈 등장';
+        self.value = '대마왕샌즈 등장';
       }
-      ">
+
+    }
+    </script>
+  </head>
+
+  <body>
+    <h1><a href="index.html">샌즈의 샌즈세상</a></h1>
+    <input type="button" value="대마왕샌즈 등장" onclick="
+    nightdaychanger(this);
+    ">
     <ol>
       <li><a href="1.html">샌즈</a></li>
       <li><a href="2.html">파피루스</a></li>
-      <li>슈퍼울트라샌즈</li>
+      <li><a href="powerfulsens.html">슈퍼울트라샌즈</a></li>
     </ol>
     샌즈의 샌즈샌즈한 세상에 오신것을 환영합니다 꼬마샌즈님
   </body>
